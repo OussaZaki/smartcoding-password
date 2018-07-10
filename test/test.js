@@ -1,3 +1,5 @@
+/* This is the completed test of all utility functions. */
+
 var assert = require('assert');
 
 var hasValidLength =  require('../utils').hasValidLength;
