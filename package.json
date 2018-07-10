@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "bundle": "browserify password.js showHide.js -o bundle.js"
+    "bundle": "browserify password.js showHide.js passwordGenerator.js -o bundle.js"
   },
   "author": "",
   "license": "ISC"
