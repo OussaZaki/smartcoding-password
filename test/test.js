@@ -1,9 +1,9 @@
 var assert = require('assert');
 
-var hasValidLength =  require('./utils').hasValidLength;
-var hasMixedCase =  require('./utils').hasMixedCase;
-var hasDigit =  require('./utils').hasDigit;
-var hasSpecial =  require('./utils').hasSpecial;
+var hasValidLength =  require('../utils').hasValidLength;
+var hasMixedCase =  require('../utils').hasMixedCase;
+var hasDigit =  require('../utils').hasDigit;
+var hasSpecial =  require('../utils').hasSpecial;
 
 describe('Utils |', function() {
   describe('hasSpecial', function() {
