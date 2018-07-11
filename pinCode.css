@@ -14,11 +14,7 @@ section {
 
 .password-container {
     display: flex;
-}
-
-.show-icon {
-    line-height: 2em !important;
-    font-size: 2em !important;
+    width: 40%;
 }
 
 input {
@@ -30,16 +26,15 @@ input {
     color: #222;
     font-size: 2em;
 }
-
-.error {
-    color: #c3073F;
-}
-
-.disabled {
-    color: #4e4e50;
-}
-.PIN
+#numbers
 {
-    width: 1em;
-    display: flex;
+    position: relative;
+    top: 1em;
+}
+#buttons
+{
+    font-size: 2em;
+    background: #ccc;
+    width: 2em;
+    text-align: center;
 }
