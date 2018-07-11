@@ -7,9 +7,10 @@ generate.addEventListener("click", function() {
 });
 
 function createPassword() {
-    var length = 7;
-    var newPassword = randomString(length);
-    console.log(newPassword);
+    var newPassword = randomLowerCase(3);
+    newPassword += randomUpperCase(3);
+    newPassword += randomNumber(1);
+    newPassword += randomSpecial(1);
     return newPassword;
 }
 
@@ -21,7 +22,7 @@ function randomLowerCase(length) {
     var letters = "abcdefghijklmnopqrstuvwxyz";
     for (let i = 0; i < length; i++) {
         var randomNumber = Math.floor(Math.random()*26);
-        newString += letters[randomNumber];
+        generatedLowerCase += letters[randomNumber];
     }
     return generatedLowerCase;
 }
@@ -31,7 +32,7 @@ function randomUpperCase(length) {
     var upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     for (let i = 0; i < length; i++) {
         var randomNumber = Math.floor(Math.random()*26);
-        newString += upperLetters[randomNumber];
+        generatedUpperCase += upperLetters[randomNumber];
     }
     return generatedUpperCase;
 }
@@ -41,7 +42,7 @@ function randomNumber(length) {
     var numbers = "0123456789";
     for (let i = 0; i < length; i++) {
         var randomNumber = Math.floor(Math.random()*10);
-        newString += numbers[randomNumber];
+        generatedNumber += numbers[randomNumber];
     }
     return generatedNumber;
 }
@@ -51,11 +52,7 @@ function randomSpecial(length) {
     var special = "!@#$%^&*_-+=";
     for (let i = 0; i < length; i++) {
         var randomNumber = Math.floor(Math.random()*12);
-        newString += special[randomNumber];
+        generatedSpecial += special[randomNumber];
     }
     return generatedSpecial;
-}
-
-function scramble() {
-
 }
