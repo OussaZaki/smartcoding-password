@@ -59,4 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# Mac specific file
 .DS_Store
+
+# generated files
+bundle.js
