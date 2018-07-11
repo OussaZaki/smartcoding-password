@@ -1,12 +1,13 @@
 /*The program only allows user to proceed to confrim-password.html when they provide a valid
 password*/
+/*Bug: After the alert, the anchor link still opens. */
 var passwordInput = document.getElementById('password');
 var nextIcon = document.getElementById('next');
 var lengthText = document.getElementById('length-text');
 var caseText = document.getElementById('case-text');
 var digitText = document.getElementById('digit-text');
 var specialText = document.getElementById('special-text');
-var confrimLink = document.getElementById('link');
+// var nextLink = document.getElementById('link');
 
 nextIcon.addEventListener('click', function() {
   if (passwordInput.value === "") {
@@ -29,6 +30,7 @@ nextIcon.addEventListener('click', function() {
     alert('You need at least one special character, including: !@#$%^&*_-+=;');
     return false;
   }
+  openTab('confirm-password.html');
 });
 
 function nextSafeguard(element) {
@@ -37,4 +39,8 @@ function nextSafeguard(element) {
   } else {
     return false;
   }
+}
+
+function openTab(url) {
+  window.open(url, '_blank');
 }
