@@ -14,7 +14,6 @@ section {
 
 .password-container {
     display: flex;
-    width: 60%;
 }
 
 .show-icon {
@@ -38,11 +37,4 @@ input {
 
 .disabled {
     color: #4e4e50;
-}
-.PIN
-{
-    width: 1em;
-    display: flex;
-    position: absolute;
-    margin-left: 11.5em;
 }
