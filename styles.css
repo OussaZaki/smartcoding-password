@@ -42,9 +42,3 @@ input {
 .identical {
     color: green;
 }
-
-.next {
-    line-height: 1.5em !important;
-    font-size: 1.5em !important;
-    text-align: right;
-}
