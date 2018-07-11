@@ -14,6 +14,7 @@ section {
 
 .password-container {
     display: flex;
+    width: 60%;
 }
 
 .show-icon {
