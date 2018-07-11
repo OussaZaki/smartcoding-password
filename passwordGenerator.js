@@ -11,7 +11,7 @@ function createPassword() {
     newPassword += randomUpperCase(3);
     newPassword += randomNumber(1);
     newPassword += randomSpecial(1);
-    return newPassword;
+    return scramble(newPassword);
 }
 
 // Math.floor = integer.
@@ -55,4 +55,16 @@ function randomSpecial(length) {
         generatedSpecial += special[randomNumber];
     }
     return generatedSpecial;
+}
+
+function scramble(stringToScramble) {
+    var stringToArray = stringToScramble.split(""); // convert to array to scramble.
+    for (let i = 0; i < stringToScramble.length; i++) {
+        var randomNumber = Math.floor(Math.random()*stringToScramble.length);
+        var swappedChar = stringToArray[i];
+        stringToArray[i] = stringToArray[randomNumber];
+        stringToArray[randomNumber] = swappedChar;
+    }
+    var scrambled = stringToArray.join(""); // return to string.
+    return scrambled;
 }
