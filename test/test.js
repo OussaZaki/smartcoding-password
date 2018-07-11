@@ -17,39 +17,38 @@ describe('Utils |', function() {
       assert.equal(hasSpecial("hello"), false);
     });
   });
-});
 
-describe('Utils |', function() {
   describe('hasMixedCase', function() {
-    it('should return true when the string has a both upper and lower case letters', function() {
-      assert.equal(hasMixedCase("helloWorld"), true);
+    it('should return true when the string has both upper and lower case letters', function() {
+      assert.equal(hasMixedCase("helloWORLD"), true);
     });
 
-    it('should return false when the string has no special char', function() {
+    it('should return false when the string has only upper or lower case letters', function() {
       assert.equal(hasMixedCase("helloworld"), false);
     });
-  });
-});
 
-describe('Utils |', function() {
+    it('should return false when the string has no upper or lower case letters', function() {
+      assert.equal(hasMixedCase("12345"), false);
+    });
+
+  });
+
   describe('hasValidLength', function() {
     it('should return true when the string has the length more than 6', function() {
       assert.equal(hasValidLength("helloworld"), true);
     });
 
-    it('should return false when the string has no special char', function() {
+    it('should return false when the string has the length less or equal 6', function() {
       assert.equal(hasValidLength("hello"), false);
     });
   });
-});
 
-describe('Utils |', function() {
   describe('hasDigit', function() {
-    it('should return true when the string has the length more than 6', function() {
+    it('should return true when the string contains intiger(s)', function() {
       assert.equal(hasDigit("hello123"), true);
     });
 
-    it('should return false when the string has no special char', function() {
+    it('should return false when the string does not contain any intiger', function() {
       assert.equal(hasDigit("hello"), false);
     });
   });
