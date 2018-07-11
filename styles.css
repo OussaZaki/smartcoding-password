@@ -42,4 +42,5 @@ input {
 {
     width: 1em;
     display: flex;
+    position: absolute;
 }
