@@ -38,3 +38,13 @@ input {
 .disabled {
     color: #4e4e50;
 }
+
+.identical {
+    color: green;
+}
+
+.next {
+    line-height: 1.5em !important;
+    font-size: 1.5em !important;
+    text-align: right;
+}
