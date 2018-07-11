@@ -44,11 +44,11 @@ describe('Utils |', function() {
   });
 
   describe('hasDigit', function() {
-    it('should return true when the string contains intiger(s)', function() {
+    it('should return true when the string contains integer(s)', function() {
       assert.equal(hasDigit("hello123"), true);
     });
 
-    it('should return false when the string does not contain any intiger', function() {
+    it('should return false when the string does not contain any integer', function() {
       assert.equal(hasDigit("hello"), false);
     });
   });
