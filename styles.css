@@ -38,3 +38,7 @@ input {
 .disabled {
     color: #4e4e50;
 }
+
+.identical {
+    color: green;
+}
