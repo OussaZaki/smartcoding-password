@@ -8,7 +8,7 @@ confirmInput.addEventListener('input', function() {
   } else {
     theLight.classList.remove("disabled");
   }
-  if (match(passwordInput, confirmInput)) {
+  if (passwordInput.value === confirmInput.value) {
     theLight.classList.remove("error");
     theLight.classList.add("identical");
   } else {
@@ -16,11 +16,3 @@ confirmInput.addEventListener('input', function() {
     theLight.classList.add("error");
   }
 });
-
-function match(string1, string2) {
-  if (string1.value === string2.value) {
-    return true;
-  } else {
-    return false;
-  }
-}
