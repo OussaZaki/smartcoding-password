@@ -9,21 +9,31 @@
         <section>
             <h2>Enter your PIN</h2>
             <div class="password-container">
-                <input type="text" id="pinCode" class="" maxlength="4" required>
+                <input type="password" id="pinCode" maxlength="4" required>
             </div>
-            <div id="numbers">
-                <button id="buttons" value="1">1</button>
-                <button id="buttons" value="2">2</button>
-                <button id="buttons" value="3">3</button><br>
-                <button id="buttons" value="4">4</button>
-                <button id="buttons" value="5">5</button>
-                <button id="buttons" value="6">6</button><br>
-                <button id="buttons" value="7">7</button>
-                <button id="buttons" value="8">8</button>
-                <button id="buttons" value="9">9</button><br>
-                <button id="buttons" ><i class="fa fa-times" id="clearIt"></i></button>
-                <button id="buttons" value="0">0</button>
-                <button id="buttons"><i class="fa fa-check"></i></button>
+            <div class="keypad">
+                <table>
+                    <tr>
+                        <td><button class="digits" value="1">1</button></td>
+                        <td><button class="digits" value="2">2</button></td>
+                        <td><button class="digits" value="3">3</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="digits" value="4">4</button></td>
+                        <td><button class="digits" value="5">5</button></td>
+                        <td><button class="digits" value="6">6</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="digits" value="7">7</button></td>
+                        <td><button class="digits" value="8">8</button></td>
+                        <td><button class="digits" value="9">9</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="digits" id="clear"><i class="fa fa-times"></i></button></td>
+                        <td><button class="digits" value="0">0</button></td>
+                        <td><button class="digits" value="" disabled>&nbsp;</button></td>
+                    </tr>
+                </table>
             </div>
         </section>
         <script src="pinCode.js"></script>
