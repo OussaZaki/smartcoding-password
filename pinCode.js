@@ -1,23 +1,21 @@
-var digits = document.getElementById("numbers");
+var buttons = document.getElementsByClassName("digits");
+var userInput = document.getElementById("pinCode");
+var clearButton = document.getElementById("clear");
 
-digits.addEventListener('click', function()
-{
-    buttonFunction();
-});
-// Work in progress! The function returns only 1 number!
-function buttonFunction(value)
-{
-    document.getElementById("pinCode").value = document.getElementById('buttons').value;
-}
 
-var clearInput = document.getElementById("clearIt");
-
-clearInput.addEventListener('click', function()
+for (var i = 0, len = buttons.length; i <= len; i += 1) 
 {
-    clearFunction();
-});
+    buttons[i].addEventListener("click", function(e) 
+    {
+        userInput.value += this.value;
+        if (userInput.value.length > 4) 
+        {
+            userInput.value = userInput.value.substring(0,4);
+        }
+    });
 
-function clearFunction()
-{
-    document.getElementById("pinCode").value = "";
+    clearButton.addEventListener("click", function() 
+    {
+        userInput.value = "";
+    });
 }
